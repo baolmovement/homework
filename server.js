@@ -15,7 +15,7 @@ app.use(logger('dev'))
 app.use(express.json()) 
 
 //routes
-app.get('/', haikuRouter)
+app.use('/', haikuRouter)
 
 app.listen(port, (err) => {
     console.log(err || `Server running on ${port}.`)
